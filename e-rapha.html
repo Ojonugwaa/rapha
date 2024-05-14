@@ -1,0 +1,131 @@
+<style>
+    section {
+        padding: 40px 40px;
+    }
+
+    /* HERO */
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px
+    }
+
+    .hero .hero_detail .hero_detail-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .hero_detail .hero_detail-cta {
+        margin-top: 40px;
+    }
+
+    .hero .hero-image {
+        display: grid;
+        place-items: center;
+    }
+
+    .hero .hero-image img {
+        object-position: center;
+        object-fit: cover;
+    }
+
+    /* WHY US */
+
+    .why-us {}
+
+    .why-us_heading {
+        width: fit-content;
+        margin: 40px auto;
+    }
+
+    .why-us_body {
+        display: flex;
+        gap: 40px;
+    }
+
+    .why-us img {
+        display: block;
+        width: fit-content;
+        height: 400px;
+    }
+
+    .why-us_body-text {
+        display: grid;
+        place-items: center;
+    }
+</style>
+
+<body>
+    <div id="first">
+        <img src="http://lagetronix.com/wp-content/uploads/2024/05/eRapha-Logo-2.png" alt="Picture of a doctor" />
+    </div>
+
+    <section class="hero">
+        <div class="hero_detail">
+            <div class="hero_detail-body">
+                <h2>All-in-one Software <br />for Hospital Management</h2>
+                <h4>
+                    Transform your hospital management with E-Rapha Join the revolution
+                    today
+                    </h5>
+                    <p>
+                        A comprehensive hospital management software designed to simplify and
+                        automate<br />
+                        processes within healthcare facilities. <br />
+                        Empowers hospitals to seamlessly streamline operations and enhance
+                        patient care
+                    </p>
+            </div>
+
+            <div class="hero_detail-cta">
+                <button id="cta_get_started">GET STARTED</button>
+                <button id="cta_download">DOWNLOAD BROCHURE</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="http://lagetronix.com/wp-content/uploads/2024/05/doc.jpg" alt="" class="image1" />
+        </div>
+    </section>
+    <section class="why-us">
+        <h2 class="why-us_heading">Why Choose E-Rapha?</h2>
+        <div class="why-us_body">
+            <img src="http://lagetronix.com/wp-content/uploads/2024/05/why.jpg" alt="Why Us" width="40%" height="600px"
+                class="why-image" />
+            <div class="why-us_body-text">
+                <div>
+                    <p>
+                        <span>◉</span> Efficiency: Save time and resources by automating routine
+                        tasks
+                    </p>
+                    <p>
+                        <span>◉</span> Accuracy: Minimize errors and ensure data integrity
+                        across all operations
+                    </p>
+                    <p>
+                        <span>◉</span> Patient Satisfaction: Enhance the patient experience with
+                        smoother processes and better communication
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <script>
+        var accordion = document.getElementsByClassName("accordion");
+        var a;
+        var panel = document.getElementsByClassName("panel");
+        for (a = 0; a < accordion.length; a++) {
+            accordion[a].addEventListener("click", function () {
+                this.classList.toggle("active");
+                panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>

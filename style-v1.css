@@ -1,0 +1,277 @@
+h1 {
+    color: rgb(2, 2, 70);
+    font-weight: bold;
+}
+
+#first {
+    margin: 40px;
+}
+
+h5 {
+    font-size: larger;
+    color: rgb(2, 2, 70);
+    font-weight: bold;
+}
+
+p {
+    font-size: larger;
+    color: rgb(2, 2, 70);
+}
+
+#b1 {
+    /* border: 30px; */
+    margin: 100px;
+    padding: 10px;
+    background-color: white;
+    color: red;
+    border-color: red;
+    border-radius: 16px;
+}
+
+#b2 {
+    border-color: red;
+    margin: 100px 8px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 16px;
+}
+
+#second {
+    border: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* display: grid; */
+}
+
+.image1 {
+    width: 800px;
+}
+
+#d3 {
+    display: inline-flex;
+}
+
+#mod-container {
+    display: inline-flex;
+    gap: 1fr 1fr 1fr 1fr;
+    background-color: rgb(2, 2, 70);
+    color: black;
+    margin: 0px;
+    padding: 20px;
+    border: 20px;
+}
+
+.division {
+    /* background-color: rgb(2, 2, 70); */
+    /* background-color: white; */
+    /* width: 100%;
+height: 100%; */
+    align-items: center;
+    border-radius: 20px;
+    display: grid;
+    gap: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    border: 10px;
+    padding: 20px;
+    color: black;
+    margin: 10px;
+    font-size: large;
+}
+
+.division img {
+    /* text-align: center; */
+    /* width: 50%;
+margin: auto;
+display: block; */
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* .toggle {
+/* position: relative; */
+/* display: inline;
+width: 100px;
+height: 52px;
+
+.toggle::after {
+content: "";
+position: absolute;
+transition: all 0.5s; */
+
+/* .checkbox {
+display: none;
+} */
+.questions {
+    display: block;
+}
+
+.account {
+    background-color: rgb(2, 2, 70);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.account p {
+    color: white;
+
+    border: 0px;
+    padding: 10px;
+}
+
+#abutton1 {
+    background-color: rgb(2, 2, 75);
+    color: white;
+
+    /* border: 10px; */
+    margin: 20px;
+    padding: 10px;
+    border-radius: 32px;
+    border-color: red;
+}
+
+#abutton2 {
+    background-color: red;
+    color: white;
+    border: 5px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 32px;
+}
+
+.accbu {
+    display: inline-flex;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 20px;
+    margin: 0 450px;
+    width: 50%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+
+.accordion body {
+    background-color: rgb(231, 239, 241);
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion::after {
+    content: "\02795";
+    font-size: 15px;
+    float: left;
+    margin-left: 5px;
+}
+
+.active::after {
+    content: "\2796";
+}
+
+.panel {
+    padding: 0 20px;
+    margin: 0 450px;
+    width: 50%;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.why-image {
+    display: block;
+    margin: 0 auto;
+}
+
+/* h1 {
+text-align: center;
+font-size: 45px;
+color: black;
+font-family: "Gilroy Medium", sans-serif;
+padding-top: 40px;
+} */
+.features-page {
+    background-color: rgb(232, 249, 255);
+}
+
+.features-page p {
+    color: black;
+}
+
+.HMO {
+    margin-top: 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Gilroy Medium", sans-serif;
+}
+
+.feature-body1 {
+    padding-bottom: 60px;
+    display: flex;
+}
+
+.why-text p {
+    font-family: "Gilroy Medium", sans-serif;
+    margin-left: 200px;
+}
+
+span {
+    color: rgb(136, 202, 224);
+}
+
+.HMO {
+    margin-right: 60px;
+    margin-left: 250px;
+}
+
+.VMO {
+    margin-right: 60px;
+    margin-left: 260px;
+    margin-top: 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Gilroy Medium", sans-serif;
+}
+
+.feature-body2 {
+    padding-bottom: 60px;
+    display: flex;
+}
+
+.feature-body3 {
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.deploy {
+    background-color: rgb(58, 58, 133);
+    margin-top: -5px;
+    display: flex;
+}
+
+.deploy1 {
+    margin-top: 120px;
+    padding-left: 400px;
+    color: white;
+    font-size: 20px;
+}
+
+.deploy2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-left: 150px;
+}
