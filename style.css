@@ -1,0 +1,62 @@
+body{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 40px 40px;
+}
+
+/* HERO */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px
+}
+
+.hero .hero_detail .hero_detail-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .hero_detail .hero_detail-cta{
+    margin-top: 40px;
+}
+
+.hero .hero-image{
+    display: grid;
+    place-items: center;
+}
+
+.hero .hero-image img{
+    object-position: center;
+    object-fit: cover;
+}
+
+/* WHY US */
+
+.why-us{
+    
+}
+
+.why-us_heading{
+    width: fit-content;
+    margin: 40px auto;
+}
+
+.why-us_body{
+    display: flex;
+    gap: 40px;
+}
+
+.why-us img{
+    display: block;
+    width: fit-content;
+    height: 400px;
+}
+
+.why-us_body-text{
+    display: grid;
+    place-items: center;
+}

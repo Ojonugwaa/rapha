@@ -1,552 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      h1 {
-        color: rgb(2, 2, 70);
-        font-weight: bold;
-      }
 
-      #first {
-        margin: 40px;
-      }
-      h5 {
-        font-size: larger;
-        color: rgb(2, 2, 70);
-        font-weight: bold;
-      }
-      p {
-        font-size: larger;
-        color: rgb(2, 2, 70);
-      }
-      #b1 {
-        /* border: 30px; */
-        margin: 100px;
-        padding: 10px;
-        background-color: white;
-        color: red;
-        border-color: red;
-        border-radius: 16px;
-      }
-      #b2 {
-        border-color: red;
-        margin: 100px 8px;
-        padding: 10px;
-        background-color: red;
-        color: white;
-        border-radius: 16px;
-      }
-      #second {
-        border: 100px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* display: grid; */
-      }
-      .image1 {
-        width: 800px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      #d3 {
-        display: inline-flex;
-      }
-      #mod-container {
-        display: inline-flex;
-        gap: 1fr 1fr 1fr 1fr;
-        background-color: rgb(2, 2, 70);
-        color: black;
-        margin: 0px;
-        padding: 20px;
-        border: 20px;
-      }
-      .division {
-        /* background-color: rgb(2, 2, 70); */
-        /* background-color: white; */
-        /* width: 100%;
-        height: 100%; */
-        align-items: center;
-        border-radius: 20px;
-        display: grid;
-        gap: 1fr 1fr 1fr 1fr;
-        place-items: center;
-        border: 10px;
-        padding: 20px;
-        color: black;
-        margin: 10px;
-        font-size: large;
-      }
+<body>
+  <div id="first">
+    <img src="http://lagetronix.com/wp-content/uploads/2024/05/eRapha-Logo-2.png" alt="eRapha logo" />
+  </div>
 
-      .division img {
-        /* text-align: center; */
-        /* width: 50%;
-        margin: auto;
-        display: block; */
-
-        align-items: center;
-        justify-content: center;
-      }
-      /* .toggle {
-        /* position: relative; */
-      /* display: inline;
-        width: 100px;
-        height: 52px;
-      
-      .toggle::after {
-        content: "";
-        position: absolute;
-        transition: all 0.5s; */
-
-      /* .checkbox {
-        display: none;
-      } */
-      .questions {
-        display: block;
-      }
-      .account {
-        background-color: rgb(2, 2, 70);
-        color: white;
-        text-align: center;
-        width: 100%;
-      }
-      .account p {
-        color: white;
-
-        border: 0px;
-        padding: 10px;
-      }
-      #abutton1 {
-        background-color: rgb(2, 2, 75);
-        color: white;
-
-        /* border: 10px; */
-        margin: 20px;
-        padding: 10px;
-        border-radius: 32px;
-        border-color: red;
-      }
-      #abutton2 {
-        background-color: red;
-        color: white;
-        border: 5px;
-        margin: 20px;
-        padding: 10px;
-        border-radius: 32px;
-      }
-      .accbu {
-        display: inline-flex;
-      }
-      h2 {
-        font-weight: bold;
-        text-align: center;
-      }
-
-      .accordion {
-        background-color: #eee;
-        color: #444;
-        cursor: pointer;
-        padding: 20px;
-        margin: 0 450px;
-        width: 50%;
-        text-align: center;
-        border: none;
-        outline: none;
-        transition: 0.5s;
-      }
-      .accordion body {
-        background-color: rgb(231, 239, 241);
-      }
-
-      .active,
-      .accordion:hover {
-        background-color: #ccc;
-      }
-      .accordion::after {
-        content: "\02795";
-        font-size: 15px;
-        float: left;
-        margin-left: 5px;
-      }
-
-      .active::after {
-        content: "\2796";
-      }
-      .panel {
-        padding: 0 20px;
-        margin: 0 450px;
-        width: 50%;
-        background-color: white;
-        display: none;
-        overflow: hidden;
-      }
-      .why-image {
-        display: block;
-        margin: 0 auto;
-      }
-      /* h1 {
-        text-align: center;
-        font-size: 45px;
-        color: black;
-        font-family: "Gilroy Medium", sans-serif;
-        padding-top: 40px;
-      } */
-      .features-page {
-        background-color: rgb(232, 249, 255);
-      }
-      .features-page p {
-        color: black;
-      }
-
-      .HMO {
-        margin-top: 0;
-        text-align: center;
-        color: #ffffff;
-        font-family: "Gilroy Medium", sans-serif;
-      }
-
-      .feature-body1 {
-        padding-bottom: 60px;
-        display: flex;
-      }
-      .why-text p {
-        font-family: "Gilroy Medium", sans-serif;
-        margin-left: 200px;
-      }
-      span {
-        color: rgb(136, 202, 224);
-      }
-      .HMO {
-        margin-right: 60px;
-        margin-left: 250px;
-      }
-      .VMO {
-        margin-right: 60px;
-        margin-left: 260px;
-        margin-top: 0;
-        text-align: center;
-        color: #ffffff;
-        font-family: "Gilroy Medium", sans-serif;
-      }
-      .feature-body2 {
-        padding-bottom: 60px;
-        display: flex;
-      }
-      .feature-body3 {
-        padding-bottom: 10px;
-        display: flex;
-      }
-      .deploy {
-        background-color: rgb(58, 58, 133);
-        margin-top: -5px;
-        display: flex;
-      }
-      .deploy1 {
-        margin-top: 120px;
-        padding-left: 400px;
-        color: white;
-        font-size: 20px;
-      }
-      .deploy2 {
-        margin-top: 60px;
-        margin-bottom: 60px;
-        padding-left: 150px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="first">
-      <img
-        src="http://lagetronix.com/wp-content/uploads/2024/05/eRapha-Logo-2.png"
-        alt="Picture of a doctor"
-      />
-    </div>
-
-    <div id="second">
-      <div>
-        <h1>All-in-one Software <br />for Hospital Management</h1>
-        <h5 style="font-size: 20px">
-          Transform your hospital management with E-Rapha.Join the revolution
+  <section class="hero">
+    <div class="hero_detail">
+      <div class="hero_detail-body">
+        <h2>All-in-one Software <br />for Hospital Management</h2>
+        <h4>
+          Transform your hospital management with E-Rapha Join the revolution
           today
-        </h5>
-        <p>
-          A comprehensive hospital management software designed to simplify and
-          automate<br />
-          processes within healthcare facilities. <br />
-          Empowers hospitals to seamlessly streamline operations and enhance
-          patient care
-        </p>
-        <div id="d3">
-          <button id="b1">GET STARTED</button>
-          <button id="b2">DOWNLOAD BROCHURE</button>
-        </div>
+          </h5>
+          <p>
+            A comprehensive hospital management software designed to simplify and
+            automate<br />
+            processes within healthcare facilities. <br />
+            Empowers hospitals to seamlessly streamline operations and enhance
+            patient care
+          </p>
       </div>
-      <div>
-        <img
-          src="http://lagetronix.com/wp-content/uploads/2024/05/doc.jpg"
-          alt=""
-          class="image1"
-        />
+
+      <div class="hero_detail-cta">
+        <button id="cta_get_started">GET STARTED</button>
+        <button id="cta_download">DOWNLOAD BROCHURE</button>
       </div>
     </div>
-    <h1 style="font-size: 70px">Why Choose E-Rapha?</h1>
-    <img
-      src="http://lagetronix.com/wp-content/uploads/2024/05/why.jpg"
-      alt="Why Us"
-      width="40%"
-      height="600px"
-      class="why-image"
-    />
-    <div class="why-text">
-      <p>
-        <span>◉</span> Efficiency: Save time and resources by automating routine
-        tasks
-      </p>
-      <p>
-        <span>◉</span> Accuracy: Minimize errors and ensure data integrity
-        across all operations
-      </p>
-      <p>
-        <span>◉</span> Patient Satisfaction: Enhance the patient experience with
-        smoother processes and better communication
-      </p>
+    <div class="hero-image">
+      <img src="http://lagetronix.com/wp-content/uploads/2024/05/doc.jpg" alt="" class="image1" />
     </div>
+  </section>
+  <section class="why-us">
+    <h2 class="why-us_heading">Why Choose E-Rapha?</h2>
+    <div class="why-us_body">
+      <img src="http://lagetronix.com/wp-content/uploads/2024/05/why.jpg" alt="Why Us" width="40%" height="600px"
+        class="why-image" />
+      <div class="why-us_body-text">
+        <div>
+          <p>
+            <span>◉</span> Efficiency: Save time and resources by automating routine
+            tasks
+          </p>
+          <p>
+            <span>◉</span> Accuracy: Minimize errors and ensure data integrity
+            across all operations
+          </p>
+          <p>
+            <span>◉</span> Patient Satisfaction: Enhance the patient experience with
+            smoother processes and better communication
+          </p>
+        </div>
 
-    <div id="mod-container">
-      <button class="division">
-        <img
-          src=" http://lagetronix.com/wp-content/uploads/2024/05/appointment.png"
-          alt="appointment"
-          class="image"
-        />
-        <h3>Appointment</h3>
-        <p>
-          Seamlessly book and manage patient appointment, consultations, and
-          medical procedures, with our intuitivr scheduling system
-        </p>
-      </button>
-      <button class="division">
-        <img
-          src="http://lagetronix.com/wp-content/uploads/2024/05/icon-park-solid-hospital-three.png"
-          alt="Pharmacy"
-          class="image"
-        />
-        <h3>Pharmacy</h3>
-        <p>
-          Efficiently manage pharmacy prescriptions, dispensing, and inventory
-          management of in-house medications and other health care supplies.
-        </p>
-      </button>
-      <button class="division">
-        <img
-          src="http://lagetronix.com/wp-content/uploads/2024/05/icomoon-free-lab.png"
-          alt="Laboratory"
-          class="image"
-        />
-        <h3>Laboratory</h3>
-        <p>
-          Manages test orders from phsiians and helps simplify lab operations
-          with integrated test ordering, result tracking and data management.
-        </p>
-      </button>
-      <button class="division">
-        <img
-          src="http://lagetronix.com/wp-content/uploads/2024/05/mdi-dollar.png"
-          alt="Billing"
-          class="image"
-        />
-        <h3>Billing</h3>
-        <p>
-          Uses medical record to streamline billing processe, including support
-          for Health Maintenance Organizations(HMOs), to ensure accurate and
-          timely payments.
-        </p>
-      </button>
-    </div>
-
-    <div class="features-page">
-      <h1>Features</h1>
-      <div class="feature-body1">
-        <div class="HMO">
-          <img
-            src="http://lagetronix.com/wp-content/uploads/2024/05/HMO.svg"
-            alt=""
-          />
-          <p>Flexible HMO Plans</p>
-        </div>
-        <div class="HMO">
-          <img
-            src="http://lagetronix.com/wp-content/uploads/2024/05/person.svg"
-            alt=""
-          />
-          <p>In Person Appointment</p>
-        </div>
-        <div class="HMO">
-          <img
-            src="http://lagetronix.com/wp-content/uploads/2024/05/virtual.svg"
-            alt=""
-          />
-          <p>Virtual Appointment</p>
-        </div>
       </div>
 
-      <div class="feature-body2">
-        <div class="HMO">
-          <img
-            src="http://lagetronix.com/wp-content/uploads/2024/05/pay.svg"
-            alt=""
-          />
-          <p>Online Bill Payment</p>
-        </div>
-        <div class="HMO">
-          <img
-            src="http://lagetronix.com/wp-content/uploads/2024/05/bill.svg"
-            alt=""
-          />
-          <p>Automated Bill Generation</p>
-        </div>
-        <div class="HMO">
-          <img
-            src="http://lagetronix.com/wp-content/uploads/2024/05/lab.svg"
-            alt=""
-          />
-          <p>Online Lab Test Result</p>
-        </div>
-      </div>
+    </div>
+  </section>
 
-      <div class="feature-body3">
-        <div class="VMO">
-          <img
-            src="http://lagetronix.com/wp-content/uploads/2024/05/shift.svg"
-            alt=""
-          />
-          <p>Shift Management</p>
-        </div>
-        <div class="VMO">
-          <img
-            src="http://lagetronix.com/wp-content/uploads/2024/05/pharmacy.svg"
-            alt=""
-          />
-          <p>Online Pharmacy</p>
-        </div>
-        <div class="VMO">
-          <img
-            src=" http://lagetronix.com/wp-content/uploads/2024/05/patient.svg"
-            alt=""
-          />
-          <p>Multiple Patient Category Option</p>
-        </div>
+
+  <section id="modules">
+    <div class="division">
+      <img src=" http://lagetronix.com/wp-content/uploads/2024/05/appointment.png" alt="appointment" class="image" />
+      <h3>Appointment</h3>
+      <p>
+        Seamlessly book and manage patient appointment, consultations, and
+        medical procedures, with our intuitivr scheduling system
+      </p>
+    </div>
+    <div class="division">
+      <img src="http://lagetronix.com/wp-content/uploads/2024/05/icon-park-solid-hospital-three.png" alt="Pharmacy"
+        class="image" />
+      <h3>Pharmacy</h3>
+      <p>
+        Efficiently manage pharmacy prescriptions, dispensing, and inventory
+        management of in-house medications and other health care supplies.
+      </p>
+    </div>
+    <div class="division">
+      <img src="http://lagetronix.com/wp-content/uploads/2024/05/icomoon-free-lab.png" alt="Laboratory" class="image" />
+      <h3>Laboratory</h3>
+      <p>
+        Manages test orders from phsiians and helps simplify lab operations
+        with integrated test ordering, result tracking and data management.
+      </p>
+    </div>
+    <div class="division">
+      <img src="http://lagetronix.com/wp-content/uploads/2024/05/mdi-dollar.png" alt="Billing" class="image" />
+      <h3>Billing</h3>
+      <p>
+        Uses medical record to streamline billing processe, including support
+        for Health Maintenance Organizations(HMOs), to ensure accurate and
+        timely payments.
+      </p>
+    </div>
+  </section>
+
+  <div class="features-page">
+    <h1>Features</h1>
+    <div class="feature-body1">
+      <div class="HMO">
+        <img src="http://lagetronix.com/wp-content/uploads/2024/05/HMO.svg" alt="" />
+        <p>Flexible HMO Plans</p>
+      </div>
+      <div class="HMO">
+        <img src="http://lagetronix.com/wp-content/uploads/2024/05/person.svg" alt="" />
+        <p>In Person Appointment</p>
+      </div>
+      <div class="HMO">
+        <img src="http://lagetronix.com/wp-content/uploads/2024/05/virtual.svg" alt="" />
+        <p>Virtual Appointment</p>
       </div>
     </div>
 
-    <div class="deploy">
-      <div class="deploy1">
-        <h2>Deployment Options?</h2>
-        <p>Educ8e can be deployed either on-premise, in</p>
-        <p>cloud, or as hybrid. It is currently hosted on Microsoft</p>
-        <p>Azure as Software as a Service (SaaS) or Platform</p>
-        <p>as a Service (PaaS) . This makes it accessible</p>
-        <p>anytime, anywhere in the world, on any device.</p>
+    <div class="feature-body2">
+      <div class="HMO">
+        <img src="http://lagetronix.com/wp-content/uploads/2024/05/pay.svg" alt="" />
+        <p>Online Bill Payment</p>
       </div>
-      <div class="deploy2">
-        <img
-          src="http://lagetronix.com/wp-content/uploads/2024/05/deploy.png"
-          alt=""
-          width="70%"
-          height="400px"
-          class="deploy-image"
-        />
+      <div class="HMO">
+        <img src="http://lagetronix.com/wp-content/uploads/2024/05/bill.svg" alt="" />
+        <p>Automated Bill Generation</p>
       </div>
-    </div>
-    <h2 style="font-size: 50px">
-      Common questions about<br />
-      Hospital management software.
-    </h2>
-
-    <button class="accordion">Who can use eRapha?</button>
-    <div class="panel">
-      <p>
-        Erapha is suitable for both small clinics and larger hospital networks.
-        Our software is designed with scalability in mind, allowing it to adapt
-        to the specific needs and size of your healthcare facility.
-      </p>
-    </div>
-
-    <button class="accordion">
-      Is eRapha customisable for my Hospital needs?
-    </button>
-    <div class="panel">
-      <p>
-        Erapha is highly customizable to meet the specific needs of your
-        hospital. Our software is designed with flexibility in mind, allowing
-        you to tailor its features and workflows to align perfectly with your
-        unique requirements. Reach out to our team to find out more.
-      </p>
-    </div>
-    <button class="accordion">How can I schedule a demo of Erapha?</button>
-    <div class="panel">
-      <p>
-        To schedule a demo of Erapha, simply click on the "Book a Demo" button
-        located on our website. This button will direct you to our demo
-        scheduling page, where you can choose a convenient date and time for
-        your demonstration session.
-      </p>
-    </div>
-    <button class="accordion">What are the pricing plans for Erapha?</button>
-    <div class="panel">
-      <p>
-        At Erapha, we understand that every healthcare facility has unique needs
-        and requirements. That's why we offer personalized pricing plans
-        tailored to the specific needs of your hospital or clinic. Our pricing
-        structure takes into account factors such as the size of your facility,
-        the number of users, the modules you require, and any customization or
-        integration needs.
-      </p>
-    </div>
-    <button class="accordion">
-      Can eRapha support multiple locations or branches of a hospital?
-    </button>
-    <div class="panel">
-      <p>
-        Erapha can efficiently manage and coordinate operations across different
-        facilities within a hospital network. Whether your organization has
-        several outpatient clinics, specialty centers, or satellite campuses,
-        Erapha provides the flexibility to centralize management, streamline
-        processes, and ensure consistent quality of care across all locations.
-      </p>
-    </div>
-
-    <div class="account">
-      <h2 style="font-size: 50px"><br /><br />Create your account today</h2>
-      <br />
-      <p style="font-size: 25px">
-        Running an hospital is complicated. That's why we made E-Rapha for you.
-      </p>
-      <br />
-      <p style="font-size: 25px">
-        To enable you power what's next for educaion
-      </p>
-      <div class="accbu">
-        <button id="abutton1">REQUEST DEMO</button>
-        <button id="abutton2">GET STARTED</button>
+      <div class="HMO">
+        <img src="http://lagetronix.com/wp-content/uploads/2024/05/lab.svg" alt="" />
+        <p>Online Lab Test Result</p>
       </div>
     </div>
 
-    <script>
-      var accordion = document.getElementsByClassName("accordion");
-      var a;
-      var panel = document.getElementsByClassName("panel");
-      for (a = 0; a < accordion.length; a++) {
-        accordion[a].addEventListener("click", function () {
-          this.classList.toggle("active");
-          panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-    </script>
-  </body>
+    <div class="feature-body3">
+      <div class="VMO">
+        <img src="http://lagetronix.com/wp-content/uploads/2024/05/shift.svg" alt="" />
+        <p>Shift Management</p>
+      </div>
+      <div class="VMO">
+        <img src="http://lagetronix.com/wp-content/uploads/2024/05/pharmacy.svg" alt="" />
+        <p>Online Pharmacy</p>
+      </div>
+      <div class="VMO">
+        <img src=" http://lagetronix.com/wp-content/uploads/2024/05/patient.svg" alt="" />
+        <p>Multiple Patient Category Option</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="deploy">
+    <div class="deploy1">
+      <h2>Deployment Options?</h2>
+      <p>Educ8e can be deployed either on-premise, in</p>
+      <p>cloud, or as hybrid. It is currently hosted on Microsoft</p>
+      <p>Azure as Software as a Service (SaaS) or Platform</p>
+      <p>as a Service (PaaS) . This makes it accessible</p>
+      <p>anytime, anywhere in the world, on any device.</p>
+    </div>
+    <div class="deploy2">
+      <img src="http://lagetronix.com/wp-content/uploads/2024/05/deploy.png" alt="" width="70%" height="400px"
+        class="deploy-image" />
+    </div>
+  </div>
+  <h2 style="font-size: 50px">
+    Common questions about<br />
+    Hospital management software.
+  </h2>
+
+  <button class="accordion">Who can use eRapha?</button>
+  <div class="panel">
+    <p>
+      Erapha is suitable for both small clinics and larger hospital networks.
+      Our software is designed with scalability in mind, allowing it to adapt
+      to the specific needs and size of your healthcare facility.
+    </p>
+  </div>
+
+  <button class="accordion">
+    Is eRapha customisable for my Hospital needs?
+  </button>
+  <div class="panel">
+    <p>
+      Erapha is highly customizable to meet the specific needs of your
+      hospital. Our software is designed with flexibility in mind, allowing
+      you to tailor its features and workflows to align perfectly with your
+      unique requirements. Reach out to our team to find out more.
+    </p>
+  </div>
+  <button class="accordion">How can I schedule a demo of Erapha?</button>
+  <div class="panel">
+    <p>
+      To schedule a demo of Erapha, simply click on the "Book a Demo" button
+      located on our website. This button will direct you to our demo
+      scheduling page, where you can choose a convenient date and time for
+      your demonstration session.
+    </p>
+  </div>
+  <button class="accordion">What are the pricing plans for Erapha?</button>
+  <div class="panel">
+    <p>
+      At Erapha, we understand that every healthcare facility has unique needs
+      and requirements. That's why we offer personalized pricing plans
+      tailored to the specific needs of your hospital or clinic. Our pricing
+      structure takes into account factors such as the size of your facility,
+      the number of users, the modules you require, and any customization or
+      integration needs.
+    </p>
+  </div>
+  <button class="accordion">
+    Can eRapha support multiple locations or branches of a hospital?
+  </button>
+  <div class="panel">
+    <p>
+      Erapha can efficiently manage and coordinate operations across different
+      facilities within a hospital network. Whether your organization has
+      several outpatient clinics, specialty centers, or satellite campuses,
+      Erapha provides the flexibility to centralize management, streamline
+      processes, and ensure consistent quality of care across all locations.
+    </p>
+  </div>
+
+  <div class="account">
+    <h2 style="font-size: 50px"><br /><br />Create your account today</h2>
+    <br />
+    <p style="font-size: 25px">
+      Running an hospital is complicated. That's why we made E-Rapha for you.
+    </p>
+    <br />
+    <p style="font-size: 25px">
+      To enable you power what's next for educaion
+    </p>
+    <div class="accbu">
+      <button id="abutton1">REQUEST DEMO</button>
+      <button id="abutton2">GET STARTED</button>
+    </div>
+  </div>
+
+  <script>
+    var accordion = document.getElementsByClassName("accordion");
+    var a;
+    var panel = document.getElementsByClassName("panel");
+    for (a = 0; a < accordion.length; a++) {
+      accordion[a].addEventListener("click", function () {
+        this.classList.toggle("active");
+        panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
 </html>
